@@ -38,7 +38,8 @@ public class AutomatedTests {
     @Test
     public void TESTCASE1() {
         try {
-            WebElement element = findElement(".desktop-impact-items-F7T6E");
+//            WebElement element = findElement(".desktop-impact-items-F7T6E");
+            WebElement element = findElement("div[class^='desktop-impact-items-']");
             File screenshot = element.getScreenshotAs(OutputType.FILE);
             FileUtils.copyFile(screenshot, new File("output\\testcase1.png"));
         } catch (Exception e) {
@@ -50,7 +51,7 @@ public class AutomatedTests {
     @Test
     public void TESTCASE2() {
         try {
-            WebElement element = findElement(".desktop-impact-items-F7T6E");
+            WebElement element = findElement("div[class^='desktop-impact-items-']");
             File screenshot = element.getScreenshotAs(OutputType.FILE);
             FileUtils.copyFile(screenshot, new File("output\\testcase2.png"));
         } catch (Exception e) {
@@ -62,7 +63,7 @@ public class AutomatedTests {
     @Test
     public void TESTCASE3() {
         try {
-            WebElement element = findElement(".desktop-content-HDB3N");
+            WebElement element = findElement("#personal-impact-view + div > div[class^='desktop-content-']");
             File screenshot = element.getScreenshotAs(OutputType.FILE);
             FileUtils.copyFile(screenshot, new File("output\\testcase3.png"));
         } catch (Exception e) {
@@ -74,7 +75,7 @@ public class AutomatedTests {
     @Test
     public void TESTCASE4() {
         try {
-            WebElement element = findElement(".desktop-description-lPXN_");
+            WebElement element = findElement("#personal-impact-view + div > div[class^='desktop-content'] > div[class^='desktop-description']");
             File screenshot = element.getScreenshotAs(OutputType.FILE);
             FileUtils.copyFile(screenshot, new File("output\\testcase4.png"));
         } catch (Exception e) {
@@ -86,7 +87,7 @@ public class AutomatedTests {
     @Test
     public void TESTCASE5() {
         try {
-            WebElement element = findElement(".desktop-impact-items-F7T6E");
+            WebElement element = findElement("div[class^='desktop-impact-items-']");
             File screenshot = element.getScreenshotAs(OutputType.FILE);
             FileUtils.copyFile(screenshot, new File("output\\testcase5.png"));
         } catch (Exception e) {
